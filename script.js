@@ -13,7 +13,7 @@ if (localStorage.getItem('tasks')) {
 
 // agregar tarea a la lista y al array de tareas
 function addTask(event) {
-  event.preventDefault(); // evita que el formulario se envíe y se actualice la página
+  event.preventDefault();
   const task = taskInput.value.trim();
   if (task) {
     addTaskToList(task);
